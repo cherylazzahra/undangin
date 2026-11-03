@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Undangin – Undangan Digital</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="logo" href="#atas">Undangin</a>
+  <div class="links"><a href="#produk">Produk</a><a href="#harga">Price list</a><a href="#cara">Cara pesan</a></div>
+  <a class="btn" style="padding:8px 18px" href="#harga">Pesan</a>
+</nav></div></header>
+
+<main id="atas">
+<div class="wrap hero">
+  <div>
+    <h1>Undangan digital yang cantik, siap dibagikan ke semua tamu</h1>
+    <p>Pilih paket, kirim data acara Anda, dan undangan digital langsung jadi. Dapat gratis revisi 2 kali.</p>
+    <div class="cta"><a class="btn" href="#produk">Lihat produk</a><a class="btn alt" href="#harga">Price list</a></div>
+    <div class="stats"><div><b>2x</b>revisi gratis</div><div><b>Rp 115rb</b>harga mulai dari</div></div>
+  </div>
+  <div class="phone" aria-label="Contoh tampilan undangan di ponsel">
+    <small>THE WEDDING OF</small>
+    <div class="ring">💍</div>
+    <h3>Rani &amp; Dimas</h3>
+    <div>Sabtu, 14 Maret 2027</div>
+    <div class="pbtn">Buka undangan</div>
+  </div>
+</div>
+
+<section id="produk"><div class="wrap">
+  <div class="sec-head"><h2>Produk Undangin</h2><p>Tiga pilihan layanan, dari undangan sederhana sampai desain premium.</p></div>
+  <div class="pk">
+    <div class="plan"><h3>Paket Undangan Digital Biasa</h3><div class="big">Rp 115.000</div>
+      <ul><li>Pembuatan undangan digital</li><li>File siap dibagikan</li><li>Free revisi 2 kali</li></ul>
+      <a class="btn alt" data-wa="Paket Undangan Digital Biasa" href="#">Pesan paket biasa</a></div>
+    <div class="plan hot"><span class="flag">Desain lebih detail</span><h3>Paket Undangan Digital Premium</h3><div class="big">Rp 200.000</div>
+      <ul><li>Desain lebih detail dan bagus</li><li>File digital tersendiri</li><li>Free revisi 2 kali</li></ul>
+      <a class="btn" data-wa="Paket Undangan Digital Premium" href="#">Pesan paket premium</a></div>
+    <div class="plan"><h3>Revisi Tambahan</h3><div class="big">Rp 50.000</div><div class="tag" style="color:var(--muted);margin-top:-8px">per 1 kali revisi</div>
+      <ul><li>Untuk revisi setelah lewat 2 kali</li><li>Bisa juga untuk menambah revisi</li></ul>
+      <a class="btn alt" data-wa="Revisi Tambahan" href="#">Pesan revisi tambahan</a></div>
+  </div>
+</div></section>
+
+<section id="harga" style="background:var(--surface)"><div class="wrap">
+  <div class="sec-head"><h2>Price list</h2><p>Daftar harga lengkap layanan Undangin.</p></div>
+  <div class="tw"><table>
+    <thead><tr><th>Produk</th><th>Isi layanan</th><th>Harga</th></tr></thead>
+    <tbody>
+      <tr><td>Paket Undangan Digital Biasa</td><td><ul><li>Pembuatan undangan digital</li><li>File siap dibagikan</li><li>Free revisi 2 kali</li></ul></td><td class="pr">Rp 115.000</td></tr>
+      <tr><td>Paket Undangan Digital Premium</td><td><ul><li>Desain lebih detail dan bagus</li><li>File digital tersendiri</li><li>Free revisi 2 kali</li></ul></td><td class="pr">Rp 200.000</td></tr>
+      <tr><td>Revisi Tambahan</td><td><ul><li>Revisi setelah lewat 2 kali revisi</li><li>Atau menambah revisi</li></ul></td><td class="pr">Rp 50.000<br><span style="font-weight:400;color:var(--muted)">per 1 kali revisi</span></td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Geser tabel ke samping jika terpotong di layar kecil.</p>
+</div></section>
+
+<section id="cara"><div class="wrap">
+  <div class="sec-head"><h2>Cara pesan</h2></div>
+  <div class="steps">
+    <div class="step"><b>Pilih paket</b><span>Pilih paket biasa atau premium.</span></div>
+    <div class="step"><b>Kirim data acara</b><span>Kirim nama, tanggal, lokasi, dan foto lewat WhatsApp.</span></div>
+    <div class="step"><b>Cek hasil</b><span>Revisi gratis 2 kali. Revisi berikutnya Rp 50.000 per kali.</span></div>
+    <div class="step"><b>Sebarkan</b><span>Bagikan file undangan ke seluruh tamu.</span></div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="cta-band"><h2>Siap membuat undangan Anda?</h2><p>Hubungi Undangin lewat WhatsApp untuk mulai memesan.</p>
+  <a class="btn" data-wa="konsultasi" href="#">Chat WhatsApp</a></div>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Undangin. Undangan digital untuk acara spesial Anda.</div></footer>
+
+<script>
+var WA="6289677036975"; // ganti dengan nomor WhatsApp Anda
+document.querySelectorAll("[data-wa]").forEach(function(a){
+  a.href="https://wa.me/"+WA+"?text="+encodeURIComponent("Halo Undangin, saya ingin pesan: "+a.getAttribute("data-wa"));
+  a.target="_blank";a.rel="noopener";
+});
+</script>
+</body>
+</html>
